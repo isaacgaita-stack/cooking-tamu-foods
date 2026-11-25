@@ -9,14 +9,14 @@
 // Never put anyone's real name or details in this file.
 
 const records = [
-  { name: "Thing 1", category: "Group A", amount: 10 },
-  { name: "Thing 2", category: "Group A", amount: 25 },
-  { name: "Thing 3", category: "Group A", amount: 0 },
-  { name: "Thing 4", category: "Group B", amount: 40 },
-  { name: "Thing 5", category: "Group B", amount: 15 },
-  { name: "Thing 6", category: "Group B", amount: 60 },
-  { name: "Thing 7", category: "Group C", amount: 5 },
-  { name: "Thing 8", category: "Group C", amount: 30 }
+  { name: "fish", category: "protein", amount: ksh 700 },
+  { name: "chicken", category: "protein", amount: ksh 900 },
+  { name: "steak", category: "protein", amount: ksh 1000 },
+  { name: "pizza", category: "carbohdrates", amount: ksh 1200 },
+  { name: "fries", category: "carbohdrates", amount: ksh 300 },
+  { name: "chapati", category: "carbohdrates", amount: ksh 100 },
+  { name: "pork ribs", category: "protein", amount: ksh 1200 },
+  { name: "rice", category: "carbohdrates", amount: ksh 300 }
 ];
 
 // Facts that are true of your file (rewrite these on Day 6 so your mentor can check your conclusions):
