@@ -41,21 +41,19 @@ if (list) {
   console.log("Items shown:", items.length);
 }
 
-// Day 6, Block 1: show every project from data.js
 const dataList = document.querySelector("#data-list");
 
-// Only run this on a page that has the data list.
 if (dataList) {
-  for (const project of projects) {
+  for (const record of records) {
     const li = document.createElement("li");
-    if (project.month.includes("2026")) {
-      li.textContent = "New: " + project.name + " (" + project.type + ", " + project.month + ")";
+    if (record.amount === 0) {
+      li.textContent = record.name + " (" + record.category + "): none right now";
     } else {
-      li.textContent = project.name + " (" + project.type + ", " + project.month + ")";
+      li.textContent = record.name + " (" + record.category + "): " + record.amount;
     }
     dataList.appendChild(li);
   }
-  console.log("Projects shown:", projects.length);
+  console.log("Records shown:", records.length);
 }
 // Day 6, Block 2: keep only my Code projects
 // Only run this on a page that has the data list.
