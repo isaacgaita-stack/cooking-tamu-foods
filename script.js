@@ -28,7 +28,7 @@ if (toggleButton) {
 // Day 4, Block 2: first add the list section to index.html (the page gives you the HTML),
 // then delete the slash-star line below and the star-slash line at the end to switch this on.
 
-const items = ["planting and ordering ingredients", "making yummy foods", "making yummy drinks"];
+const items = ["help equip people with knowledge on how to cook", "provide the best recipe", "provide the best and healthiest ingredients"];
 const list = document.querySelector("#item-list");
 
 // Only run this on a page that has the list.
