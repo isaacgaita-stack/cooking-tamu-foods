@@ -57,28 +57,26 @@ if (dataList) {
   }
   console.log("Projects shown:", projects.length);
 }
-// Day 6, Block 2: keep only the free clubs
+// Day 6, Block 2: keep only my Code projects
 // Only run this on a page that has the data list.
 if (dataList) {
-  const free = clubs.filter(function (club) {
-    return club.costKsh === 0;
+  const codeProjects = projects.filter(function (project) {
+    return project.type === "Code";
   });
 
   const filterCount = document.querySelector("#filter-count");
   const filterList = document.querySelector("#filter-list");
-  filterCount.textContent = free.length + " of " + clubs.length + " clubs match.";
+  filterCount.textContent = codeProjects.length + " of " + projects.length + " projects are Code projects.";
 
-  for (const club of free) {
+  for (const project of codeProjects) {
     const li = document.createElement("li");
-    li.textContent = club.name + " on " + club.day;
+    li.textContent = project.name + " (" + project.month + ")";
     filterList.appendChild(li);
   }
 
-  if (free.length === 0) {
+  if (codeProjects.length === 0) {
     const li = document.createElement("li");
-    li.textContent = "No clubs match";
+    li.textContent = "No projects match";
     filterList.appendChild(li);
   }
 }
-
- 
