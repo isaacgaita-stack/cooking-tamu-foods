@@ -57,35 +57,6 @@ if (dataList) {
   }
   console.log("Projects shown:", projects.length);
 }
-// Day 6, Block 1: show every project from data.js
-const dataList = document.querySelector("#data-list");
 
-// Only run this on a page that has the data list.
-if (dataList) {
-  for (const project of projects) {
-    const li = document.createElement("li");
-    if (project.month.includes("2026")) {
-      li.textContent = "New: " + project.name + " (" + project.type + ", " + project.month + ")";
-    } else {
-      li.textContent = project.name + " (" + project.type + ", " + project.month + ")";
-    }
-    dataList.appendChild(li);
-  }
-  console.log("Projects shown:", projects.length);
-}
-// Day 6, Block 1: show every project from data.js
-const dataList = document.querySelector("#data-list");
 
-// Only run this on a page that has the data list.
-if (dataList) {
-  for (const project of projects) {
-    const li = document.createElement("li");
-    if (project.month.includes("2026")) {
-      li.textContent = "New: " + project.name + " (" + project.type + ", " + project.month + ")";
-    } else {
-      li.textContent = project.name + " (" + project.type + ", " + project.month + ")";
-    }
-    dataList.appendChild(li);
-  }
-  console.log("Projects shown:", projects.length);
-}
+ 
