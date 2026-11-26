@@ -55,3 +55,26 @@ if (dataList) {
   }
   console.log("Records shown:", records.length);
 }
+// Day 6, Block 2: keep only the records in one category
+// Only run this on a page that has the data list.
+if (dataList) {
+  const matches = records.filter(function (record) {
+    return record.category === "[Category A]";
+  });
+
+  const filterCount = document.querySelector("#filter-count");
+  const filterList = document.querySelector("#filter-list");
+  filterCount.textContent = matches.length + " of " + records.length + " records match.";
+
+  for (const record of matches) {
+    const li = document.createElement("li");
+    li.textContent = record.name;
+    filterList.appendChild(li);
+  }
+
+  if (matches.length === 0) {
+    const li = document.createElement("li");
+    li.textContent = "Nothing matches yet.";
+    filterList.appendChild(li);
+  }
+}
