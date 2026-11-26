@@ -9,14 +9,14 @@
 // Never put anyone's real name or details in this file.
 
 const records = [
-  { name: "fish", category: "protein", amount: ksh 700 },
-  { name: "chicken", category: "protein", amount: ksh 900 },
-  { name: "steak", category: "protein", amount: ksh 1000 },
-  { name: "pizza", category: "carbohdrates", amount: ksh 1200 },
-  { name: "fries", category: "carbohdrates", amount: ksh 300 },
-  { name: "chapati", category: "carbohdrates", amount: ksh 100 },
-  { name: "pork ribs", category: "protein", amount: ksh 1200 },
-  { name: "rice", category: "carbohdrates", amount: ksh 300 }
+  { name: "fish", category: "protein", amount:"ksh 700"  },
+  { name: "chicken", category: "protein", amount: "ksh 800" },
+  { name: "steak", category: "protein", amount: "ksh 1000" },
+  { name: "pizza", category: "carbohdrates", amount: "ksh 1200" },
+  { name: "fries", category: "carbohdrates", amount: "ksh 200" },
+  { name: "chapati", category: "carbohdrates", amount:"ksh 100" },
+  { name: "pork ribs", category: "protein", amount: "ksh 1200" },
+  { name: "rice", category: "carbohdrates", amount: "ksh 300" }
 ];
 
 // Facts that are true of your file (rewrite these on Day 6 so your mentor can check your conclusions):
