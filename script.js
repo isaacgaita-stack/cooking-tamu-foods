@@ -55,29 +55,3 @@ if (dataList) {
   }
   console.log("Records shown:", records.length);
 }
-const dataList = document.querySelector("#data-list");
-
-
-// Day 6, Block 2: keep only my Code projects
-// Only run this on a page that has the data list.
-if (dataList) {
-  const codeProjects = projects.filter(function (project) {
-    return project.type === "Code";
-  });
-
-  const filterCount = document.querySelector("#filter-count");
-  const filterList = document.querySelector("#filter-list");
-  filterCount.textContent = codeProjects.length + " of " + projects.length + " projects are Code projects.";
-
-  for (const project of codeProjects) {
-    const li = document.createElement("li");
-    li.textContent = project.name + " (" + project.month + ")";
-    filterList.appendChild(li);
-  }
-
-  if (codeProjects.length === 0) {
-    const li = document.createElement("li");
-    li.textContent = "No projects match";
-    filterList.appendChild(li);
-  }
-}
