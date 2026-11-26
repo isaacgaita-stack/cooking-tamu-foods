@@ -59,12 +59,12 @@ if (dataList) {
 // Only run this on a page that has the data list.
 if (dataList) {
   const matches = records.filter(function (record) {
-    return record.category === "[Category A]";
+    return record.category === "protein";
   });
 
   const filterCount = document.querySelector("#filter-count");
   const filterList = document.querySelector("#filter-list");
-  filterCount.textContent = matches.length + " of " + records.length + " records match.";
+  filterCount.textContent = matches.length + " of " + records.length + " are protein recipes.";
 
   for (const record of matches) {
     const li = document.createElement("li");
