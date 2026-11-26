@@ -55,6 +55,9 @@ if (dataList) {
   }
   console.log("Records shown:", records.length);
 }
+const dataList = document.querySelector("#data-list");
+
+
 // Day 6, Block 2: keep only my Code projects
 // Only run this on a page that has the data list.
 if (dataList) {
